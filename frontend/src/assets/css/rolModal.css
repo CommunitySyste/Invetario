@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap');
+* { font-family: 'DM Sans', sans-serif; }
+
+/* Backdrop */
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+/* Caja modal */
+.modal-box {
+  background: #111118;
+  border-color: #1e1e2a;
+}
+
+/* Cabecera */
+.modal-title { color: #f0ecff; }
+.modal-sub   { color: #55526a; }
+
+.modal-close {
+  background: #16161f;
+  border-color: #1e1e2a;
+  color: #7a7590;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.modal-close:hover {
+  background: rgba(248,113,113,0.1);
+  color: #f87171;
+  border-color: rgba(248,113,113,0.2);
+}
+
+/* Divider */
+.modal-divider {
+  height: 1px;
+  background: #1e1e2a;
+}
+
+/* Labels */
+.field-label    { color: #55526a; }
+.field-required { color: #f87171; }
+.field-hint     { color: #3e3c52; }
+
+/* Inputs */
+.field-input {
+  background: #0f0f16;
+  border-color: #1e1e2a;
+  color: #c4b8e8;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.field-input::placeholder { color: #3e3c52; }
+.field-input:focus {
+  border-color: #7c5cbf;
+  box-shadow: 0 0 0 3px rgba(124,92,191,0.12);
+}
+
+/* Paleta */
+.color-swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.12s, border-color 0.12s;
+  flex-shrink: 0;
+}
+.color-swatch:hover { transform: scale(1.15); }
+.color-active {
+  border-color: #fff;
+  transform: scale(1.15);
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
+}
+
+/* Preview color */
+.color-preview { border-color: #1e1e2a; }
+
+/* Botones */
+.btn-primary {
+  background: #7c5cbf;
+  color: #fff;
+  border: 1px solid #7c5cbf;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn-primary:hover { background: #6b4dab; }
+
+.btn-cancel {
+  background: #111118;
+  border-color: #1e1e2a;
+  color: #7a7590;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn-cancel:hover { background: #16161f; }

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ─── Base ─────────────────────────────────────────────── */
+.login-root {
+  font-family: 'DM Sans', sans-serif;
+  background: #0c0c0f;
+}
+
+/* ─── Panel izquierdo ─────────────────────────────────── */
+.brand-panel {
+  background: #111118;
+  border-right: 1px solid #1e1e2a;
+}
+
+/* Fondo geométrico */
+.geo-bg { position: absolute; inset: 0; overflow: hidden; }
+
+.geo-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(160, 130, 255, 0.08);
+}
+.geo-1 { width: 500px; height: 500px; top: -120px; right: -140px; }
+.geo-2 { width: 320px; height: 320px; top: -40px;  right: -60px;  border-color: rgba(160,130,255,0.12); }
+.geo-3 { width: 160px; height: 160px; bottom: 120px; left: 40px; border-color: rgba(160,130,255,0.06); }
+
+/* Líneas de grid decorativas */
+.geo-lines {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Brand */
+.brand-icon {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, #7c5cbf, #a07fdb);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+}
+.brand-icon--sm { width: 32px; height: 32px; border-radius: 8px; }
+
+.brand-name {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #e8e0ff;
+  letter-spacing: -0.02em;
+}
+.brand-name--dark { color: #1a1a2e; }
+
+.brand-tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #7c5cbf;
+}
+
+.brand-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  font-weight: 600;
+  color: #f0ecff;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+.brand-headline em {
+  font-style: italic;
+  color: #b899f5;
+}
+
+.brand-sub {
+  font-size: 0.875rem;
+  color: #6b6880;
+  line-height: 1.7;
+}
+
+/* Stats */
+.stats-row { display: flex; gap: 12px; }
+
+.stat-pill {
+  display: flex; flex-direction: column;
+  background: rgba(124, 92, 191, 0.08);
+  border: 1px solid rgba(124, 92, 191, 0.15);
+  border-radius: 12px;
+  padding: 10px 16px;
+  gap: 2px;
+}
+.stat-num {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #c4a8f5;
+  line-height: 1;
+}
+.stat-label {
+  font-size: 0.7rem;
+  color: #5a5670;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Categorías */
+.cat-tag {
+  font-size: 0.75rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  color: #7a7590;
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+/* ─── Panel derecho ───────────────────────────────────── */
+.form-panel { background: #0c0c0f; }
+
+.form-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f0ecff;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.form-subtitle {
+  font-size: 0.875rem;
+  color: #55526a;
+}
+
+/* Campos */
+.field-group { display: flex; flex-direction: column; gap: 6px; }
+
+.field-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #7a7590;
+  letter-spacing: 0.02em;
+}
+
+.field-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.field-icon {
+  position: absolute;
+  left: 14px;
+  color: #4a4760;
+  display: flex;
+  pointer-events: none;
+}
+
+.field-input {
+  width: 100%;
+  background: #16161f;
+  border: 1px solid #24242f;
+  border-radius: 12px;
+  padding: 13px 14px 13px 42px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #e8e0ff;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.field-input::placeholder { color: #35334a; }
+
+.field-input:focus {
+  border-color: #7c5cbf;
+  box-shadow: 0 0 0 3px rgba(124, 92, 191, 0.12);
+}
+
+.field-eye {
+  position: absolute;
+  right: 14px;
+  color: #4a4760;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 4px;
+  border-radius: 6px;
+  transition: color 0.15s;
+}
+.field-eye:hover { color: #9880c8; }
+
+/* Botón */
+.btn-login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #7c5cbf, #9b7ad4);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+  letter-spacing: 0.01em;
+}
+.btn-login:hover  { opacity: 0.9; transform: translateY(-1px); }
+.btn-login:active { opacity: 1;   transform: translateY(0); }
+
+/* Footer */
+.form-footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #2e2c3e;
+}

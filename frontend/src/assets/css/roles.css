@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap');
+
+* { font-family: 'DM Sans', sans-serif; }
+
+/* Página */
+.page-title { color: #f0ecff; }
+.page-sub   { color: #55526a; }
+
+/* Botón primario */
+.btn-primary {
+  background: #7c5cbf;
+  color: #fff;
+  border: 1px solid #7c5cbf;
+  transition: background 0.15s;
+}
+.btn-primary:hover { background: #6b4dab; }
+
+/* Buscador */
+.search-wrap { background: #111118; border-color: #1e1e2a; }
+.search-input { color: #c4b8e8; }
+.search-input::placeholder { color: #3e3c52; }
+
+/* Card */
+.card { background: #111118; border-color: #1e1e2a; }
+.table-header { background: #0f0f16; }
+
+/* Tabla */
+.th { color: #3e3c52; border-color: #1e1e2a; }
+.td { color: #9490b0; border-color: #16161f; transition: background 0.12s; }
+.table-row:hover .td { background: #16161f; }
+
+.role-name { color: #e0d8f8; font-weight: 500; }
+.desc-cell { color: #55526a !important; }
+
+.role-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.role-dot-red    { background: #f87171; box-shadow: 0 0 6px #f8717166; }
+.role-dot-purple { background: #b899f5; box-shadow: 0 0 6px #b899f566; }
+.role-dot-sky    { background: #38bdf8; box-shadow: 0 0 6px #38bdf866; }
+.role-dot-green  { background: #34d399; box-shadow: 0 0 6px #34d39966; }
+
+/* Estados */
+.estado-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; display: inline-block; }
+.estado-ok  { background: rgba(52,211,153,0.1);  color: #34d399; }
+.estado-low { background: rgba(251,191,36,0.1);   color: #fbbf24; }
+
+/* Acciones */
+.action-btn { cursor: pointer; transition: background 0.12s; }
+.action-btn-edit { background: rgba(124,92,191,0.08); border-color: rgba(124,92,191,0.2); color: #9b7ad4; }
+.action-btn-edit:hover { background: rgba(124,92,191,0.18); }
+.action-btn-del  { background: rgba(248,113,113,0.08); border-color: rgba(248,113,113,0.2); color: #f87171; }
+.action-btn-del:hover  { background: rgba(248,113,113,0.18); }
+
+/* Paginación */
+.pag-btn { background: #111118; border-color: #1e1e2a; color: #7a7590; cursor: pointer; transition: background 0.12s; }
+.pag-btn:hover { background: #16161f; }
+.pag-btn-active { background: rgba(124,92,191,0.15); border-color: rgba(124,92,191,0.3); color: #9b7ad4; }
+
+/* Modal */
+.modal-overlay { background: #111118; border-color: #1e1e2a; }
+.modal-title   { color: #f0ecff; }
+.modal-close   { background: #16161f; border-color: #1e1e2a; color: #7a7590; cursor: pointer; }
+.modal-close:hover { background: rgba(248,113,113,0.1); color: #f87171; border-color: rgba(248,113,113,0.2); }
+.modal-footer-border { border-color: #1e1e2a; }
+
+/* Campos */
+.field-label { color: #55526a; }
+.field-input {
+  background: #0f0f16;
+  border-color: #1e1e2a;
+  color: #c4b8e8;
+  transition: border-color 0.15s;
+}
+.field-input::placeholder { color: #3e3c52; }
+.field-input:focus { border-color: #7c5cbf; }
+
+/* Cancelar */
+.btn-cancel { background: #111118; border-color: #1e1e2a; color: #7a7590; cursor: pointer; }
+.btn-cancel:hover { background: #16161f; }

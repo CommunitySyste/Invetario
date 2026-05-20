@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap');
+* { font-family: 'DM Sans', sans-serif; }
+
+.page-title { color: #f0ecff; }
+.page-sub   { color: #55526a; }
+
+/* Export btn */
+.btn-export {
+  background: #111118;
+  border-color: #1e1e2a;
+  color: #9490b0;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn-export:hover { background: #16161f; color: #c4b8e8; }
+
+/* Stat cards */
+.stat-card { background: #111118; }
+.stat-purple { border-color: #7c5cbf44; border-top: 2px solid #7c5cbf; }
+.stat-amber  { border-color: #f59e0b44; border-top: 2px solid #f59e0b; }
+.stat-green  { border-color: #10b98144; border-top: 2px solid #10b981; }
+.stat-sky    { border-color: #0ea5e944; border-top: 2px solid #0ea5e9; }
+
+.stat-icon-purple { background: #7c5cbf18; color: #7c5cbf; }
+.stat-icon-amber  { background: #f59e0b18; color: #f59e0b; }
+.stat-icon-green  { background: #10b98118; color: #10b981; }
+.stat-icon-sky    { background: #0ea5e918; color: #0ea5e9; }
+
+.stat-label { color: #55526a; }
+.stat-value { color: #f0ecff; line-height: 1; }
+
+/* Card */
+.card        { background: #111118; border-color: #1e1e2a; }
+.card-title  { color: #c4b8e8; }
+.icon-muted  { color: #55526a; }
+.table-header { background: #0f0f16; }
+
+/* Chart placeholder */
+.chart-placeholder {
+  background: #0f0f16;
+  border: 1px dashed #1e1e2a;
+}
+.icon-placeholder { color: #2a2838; }
+
+/* Tabla */
+.th { color: #3e3c52; border-color: #1e1e2a; }
+.td { color: #9490b0; border-color: #16161f; transition: background 0.12s; }
+.table-row:hover .td { background: #16161f; }
+
+.prod-name  { color: #e0d8f8; }
+.desc-cell  { color: #55526a !important; }
+.price-cell { color: #b899f5 !important; font-weight: 500; }
+
+.cat-badge { background: rgba(255,255,255,0.04); border-color: #2a2838; color: #7a7590; }
+
+.stock-low { color: #fbbf24; }
+.stock-out { color: #f87171; }
+
+/* Estados */
+.estado-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; display: inline-block; }
+.estado-low { background: rgba(251,191,36,0.1);  color: #fbbf24; }
+.estado-out { background: rgba(248,113,113,0.1); color: #f87171; }
