@@ -1,12 +1,12 @@
 import { config } from '@vue/test-utils';
 import axios from 'axios';
 import { useAuthStore } from '../stores/auth'
+import router from '../router';
 
 const api = axios.create({
-    baseURL: '/api',
+    baseURL: 'https://inventario-api-253x.onrender.com/api',
     headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
     },
 });
 
